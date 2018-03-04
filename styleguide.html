@@ -1,0 +1,278 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<link rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow.min.css" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.72222;
+  margin: 0 auto;
+  background-color:#efefef;
+}
+.container{
+  width:100%;
+  margin: 0 auto;
+  padding: 5% 15% 5% 15%;
+}
+.showCode{
+float: right;
+font-size: 14px;
+cursor: pointer;
+}
+.copyCode{
+float: right;
+background-color:#d9534f; margin: 0 ; width:75px; font-size: 10px;
+border:1px solid #d9534f;
+}
+h2.kdssearch{
+  font-family: Helvetica, Arial, sans-serif;
+  color: gray;
+  display: inline;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.1;
+}
+td{
+  padding: 3px 5px 3px 5px;
+}
+.kapsarclogo{
+  padding-right:10px;
+  border-right: 1px solid #ccc;
+}
+.kdssearch input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #C8C8C8;
+    float: left;
+    border-right: none;
+    height: 35px;
+}
+
+.kdssearch button {
+    float: left;
+    padding: 7px;
+    background: none;
+    color: #989898;
+    font-size: 17px;
+    border: 1px solid #C8C8C8;
+    border-left: none;
+    cursor: pointer;
+    height: 35px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      Styles: <a class="showCode" data-toggle="collapse" data-target="#style"><i class="fa fa-code"></i> code</a>
+      <div id="style" class="collapse">
+      <hr>
+      <button class="btn btn-success copyCode" data-clipboard-target="#copy">Copy Code</button>
+      <div id="copy">
+      <pre class="prettyprint linenums" id="no-border">
+          <xmp>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+            h2.kdssearch{
+              font-family: Helvetica, Arial, sans-serif;
+              color: gray;
+              display: inline;
+              white-space: nowrap;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 1.1;
+            }
+            td{
+              padding: 3px 5px 3px 5px;
+            }
+            .kapsarclogo{
+              padding-right:10px;
+              border-right: 1px solid #ccc;
+            }
+            .kdssearch input[type=text] {
+                padding: 10px;
+                font-size: 17px;
+                border: 1px solid #C8C8C8;
+                float: left;
+                border-right: none;
+                height: 35px;
+            }
+
+            .kdssearch button {
+                float: left;
+                padding: 7px;
+                background: none;
+                color: #989898;
+                font-size: 17px;
+                border: 1px solid #C8C8C8;
+                border-left: none;
+                cursor: pointer;
+                height: 35px;
+            }
+            </style>
+          </xmp>
+      </pre>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Sample #1: <a class="showCode" data-toggle="collapse" data-target="#sample1"><i class="fa fa-code"></i> code</a></div>
+    <div class="panel-body">
+      <form class="kdssearch" action="https://datasource.kapsarc.org/explore" >
+        <table>
+          <tr>
+            <td rowspan="2">
+              <img class="kapsarclogo" src="https://images2.imgbox.com/d6/a5/xH092A3O_o.png" width="210px" height="65px">
+            </td>
+            <td>
+              <h2 class="kdssearch">Search on KAPSARC Data Portal</h2>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input name="q" size="27" type="text" placeholder="Search..."/>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </td>
+          </tr>
+      </table>
+      </form>
+      <div id="sample1" class="collapse">
+      <hr>
+      <button class="btn btn-success copyCode" data-clipboard-target="#copy">Copy Code</button>
+      <div id="copy">
+      <pre class="prettyprint linenums" id="no-border">
+          <xmp>
+              <form class="kdssearch" action="https://datasource.kapsarc.org/explore" >
+                <table>
+                  <tr>
+                    <td rowspan="2">
+                      <img class="kapsarclogo" src="https://images2.imgbox.com/d6/a5/xH092A3O_o.png" width="210px" height="65px">
+                    </td>
+                    <td>
+                      <h2 class="kdssearch">Search on KAPSARC Data Portal</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <input name="q" size="27" type="text" placeholder="Search..."/>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </td>
+                  </tr>
+              </table>
+              </form>
+          </xmp>
+      </pre>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Sample #2: <a class="showCode" data-toggle="collapse" data-target="#sample2"><i class="fa fa-code"></i> code</a></div>
+    <div class="panel-body">
+      <form class="kdssearch" action="https://datasource.kapsarc.org/explore" >
+        <table>
+          <tr>
+            <td rowspan="2">
+              <img class="kapsarclogo" src="https://images2.imgbox.com/d6/a5/xH092A3O_o.png" width="210px" height="65px">
+            </td>
+            <td>
+                <input name="q" type="text" size="28" placeholder="Search on KAPSARC Data Portal.."/>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </td>
+          </tr>
+      </table>
+      </form>
+      <div id="sample2" class="collapse">
+      <hr>
+      <button class="btn btn-success copyCode" data-clipboard-target="#copy">Copy Code</button>
+      <div id="copy">
+      <pre class="prettyprint linenums" id="no-border">
+          <xmp>
+            <form class="kdssearch" action="https://datasource.kapsarc.org/explore" >
+              <table>
+                <tr>
+                  <td rowspan="2">
+                    <img class="kapsarclogo" src="https://images2.imgbox.com/d6/a5/xH092A3O_o.png" width="210px" height="65px">
+                  </td>
+                  <td>
+                      <input name="q" type="text" size="28" placeholder="Search on KAPSARC Data Portal.."/>
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                  </td>
+                </tr>
+            </table>
+            </form>
+          </xmp>
+      </pre>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Sample #3: <a class="showCode" data-toggle="collapse" data-target="#sample3"><i class="fa fa-code"></i> code</a></div>
+    <div class="panel-body">
+      <form class="kdssearch" action="https://datasource.kapsarc.org/explore" >
+        <table>
+          <tr>
+            <td>
+              <img src="https://images2.imgbox.com/d6/a5/xH092A3O_o.png" width="210px" height="65px">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <input name="q" type="text" size="28" placeholder="Search on KAPSARC Data Portal.."/>
+                <button><i class="fa fa-search"></i></button>
+            </td>
+          </tr>
+      </table>
+      </form>
+      <div id="sample3" class="collapse">
+      <hr>
+      <button class="btn btn-success copyCode" data-clipboard-target="#copy">Copy Code</button>
+      <div id="copy">
+      <pre class="prettyprint linenums" id="no-border">
+          <xmp>
+            <form class="kdssearch" action="https://datasource.kapsarc.org/explore" >
+              <table>
+                <tr>
+                  <td>
+                    <img src="https://images2.imgbox.com/d6/a5/xH092A3O_o.png" width="210px" height="65px">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <input name="q" type="text" size="28" placeholder="Search on KAPSARC Data Portal.."/>
+                      <button><i class="fa fa-search"></i></button>
+                  </td>
+                </tr>
+            </table>
+            </form>
+          </xmp>
+      </pre>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="clipboard.min.js"></script>
+<script>
+  var clipboard = new Clipboard('.copyCode');
+  clipboard.on('success', function(e) {
+      console.log(e);
+  });
+  clipboard.on('error', function(e) {
+      console.log(e);
+  });
+</script>
+
+</body>
+</html>
